@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import CheckConstraint, DateTime, ForeignKey, String, func
+from sqlalchemy import CheckConstraint, DateTime, ForeignKey, String, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.core.database import Base, uuid_pk
@@ -10,6 +10,7 @@ from app.core.database import Base, uuid_pk
 class Invitation(Base):
     __tablename__ = "invitations"
     __table_args__ = (
+        UniqueConstraint("assessment_id", "rater_email"),
         CheckConstraint(
             "status IN ('pending', 'submitted', 'expired')", name="status_valid"
         ),

@@ -5,6 +5,7 @@ class Settings(BaseSettings):
     database_url: str
     cors_origins: str
     secret_key: str
+    frontend_url: str
     cookie_secure: bool = False
     session_max_age_seconds: int = 60 * 60 * 24 * 7
 
