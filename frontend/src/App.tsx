@@ -7,6 +7,7 @@ import GuestSurveyPage from "./pages/GuestSurveyPage";
 import LoginPage from "./pages/LoginPage";
 import NewAssessmentPage from "./pages/NewAssessmentPage";
 import RegisterPage from "./pages/RegisterPage";
+import ResultsPage from "./pages/ResultsPage";
 import SelfAssessmentPage from "./pages/SelfAssessmentPage";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/assessments/new" element={<NewAssessmentPage />} />
           <Route path="/assessments/:id" element={<AssessmentPage />} />
           <Route path="/assessments/:id/self" element={<SelfAssessmentPage />} />
+          <Route path="/assessments/:id/results" element={<ResultsPage />} />
         </Route>
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />

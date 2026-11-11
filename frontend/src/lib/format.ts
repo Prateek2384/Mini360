@@ -21,3 +21,14 @@ export function defaultCloseInput(days = 14): string {
 export function localInputToIso(value: string): string {
   return new Date(value).toISOString();
 }
+
+export function formatScore(value: number | null): string {
+  if (value === null) return "—";
+  return (Math.round(value * 10) / 10 + 0).toFixed(1);
+}
+
+export function formatGap(value: number | null): string {
+  if (value === null) return "—";
+  const rounded = Math.round(value * 10) / 10 + 0;
+  return `${rounded > 0 ? "+" : ""}${rounded.toFixed(1)}`;
+}
