@@ -46,3 +46,16 @@ export function ErrorBox({ error }: { error: unknown }) {
     </div>
   );
 }
+
+export function StatusBadge({ status }: { status: string }) {
+  const styles: Record<string, string> = {
+    draft: "bg-gray-100 text-gray-700",
+    open: "bg-green-100 text-green-800",
+    closed: "bg-blue-100 text-blue-800",
+  };
+  return (
+    <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${styles[status] ?? ""}`}>
+      {status}
+    </span>
+  );
+}
