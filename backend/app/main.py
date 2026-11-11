@@ -15,7 +15,7 @@ from app.routes.self_assessment import router as self_assessment_router
 from app.routes.invitations import router as invitations_router
 from app.routes.guest import router as guest_router
 from app.routes.results import router as results_router
-
+from app.routes.goals import router as goals_router
 
 
 setup_logging()
@@ -64,3 +64,4 @@ app.include_router(self_assessment_router)
 app.include_router(invitations_router)
 app.include_router(guest_router)
 app.include_router(results_router)
+app.include_router(goals_router)
