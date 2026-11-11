@@ -13,6 +13,9 @@ from app.routes.auth import router as auth_router
 from app.routes.assessments import router as assessments_router
 from app.routes.self_assessment import router as self_assessment_router
 from app.routes.invitations import router as invitations_router
+from app.routes.guest import router as guest_router
+from app.routes.results import router as results_router
+
 
 
 setup_logging()
@@ -59,3 +62,5 @@ app.include_router(auth_router)
 app.include_router(assessments_router)
 app.include_router(self_assessment_router)
 app.include_router(invitations_router)
+app.include_router(guest_router)
+app.include_router(results_router)

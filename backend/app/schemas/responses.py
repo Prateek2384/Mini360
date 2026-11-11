@@ -25,3 +25,10 @@ class ResponseSubmit(BaseModel):
 class SubmitResult(BaseModel):
     response_id: uuid.UUID
     submitted_at: datetime
+
+
+class GuestSurvey(BaseModel):
+    assessment_title: str
+    leader_name: str
+    expires_at: datetime
+    questions: list[QuestionRead]
