@@ -47,3 +47,11 @@ Open http://localhost:5173
 
 Note: the database password is only applied the first time the
 Postgres volume is created. Changing `.env` later does not change it.
+
+## Documentation
+
+- [ER diagram and database rules](docs/er-diagram.md)
+- [Decisions log](docs/decisions.md)
+- [Testing and evidence](docs/testing.md)
+- [Design notes, wireframes and iterations](docs/design.md)
+- [Retrospective](docs/retrospective.md)
