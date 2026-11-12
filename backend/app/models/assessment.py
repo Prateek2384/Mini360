@@ -15,7 +15,6 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.core.database import Base, uuid_pk
 
 
-
 class Assessment(Base):
     __tablename__ = "assessments"
     """Constraint	Rule	PRD se connection

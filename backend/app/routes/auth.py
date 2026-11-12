@@ -32,7 +32,7 @@ def register(data: RegisterRequest, db: Session = Depends(get_db)):
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise ConflictError("Email already registered")
+        raise ConflictError("Email already registered") from None
     db.refresh(user)
     return user
 

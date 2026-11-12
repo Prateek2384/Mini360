@@ -37,6 +37,6 @@ def submit(token: str, data: ResponseSubmit, db: Session = Depends(get_db)):
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise ConflictError("This invitation has already been used")
+        raise ConflictError("This invitation has already been used") from None
     db.refresh(response)
     return SubmitResult(response_id=response.id, submitted_at=response.submitted_at)

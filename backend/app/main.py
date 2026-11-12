@@ -8,15 +8,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.errors import register_error_handlers
 from app.core.logging import setup_logging
-from app.routes.health import router as health_router
-from app.routes.auth import router as auth_router
 from app.routes.assessments import router as assessments_router
-from app.routes.self_assessment import router as self_assessment_router
-from app.routes.invitations import router as invitations_router
-from app.routes.guest import router as guest_router
-from app.routes.results import router as results_router
+from app.routes.auth import router as auth_router
 from app.routes.goals import router as goals_router
+from app.routes.guest import router as guest_router
+from app.routes.health import router as health_router
+from app.routes.invitations import router as invitations_router
 from app.routes.report import router as report_router
+from app.routes.results import router as results_router
+from app.routes.self_assessment import router as self_assessment_router
 
 setup_logging()
 logger = logging.getLogger("app.request")

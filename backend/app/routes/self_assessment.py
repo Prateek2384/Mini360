@@ -44,6 +44,6 @@ def submit_self_response(
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise ConflictError("Self-assessment already submitted")
+        raise ConflictError("Self-assessment already submitted") from None
     db.refresh(response)
     return SubmitResult(response_id=response.id, submitted_at=response.submitted_at)

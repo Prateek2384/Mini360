@@ -1,9 +1,11 @@
 import logging
-logger = logging.getLogger("app.errors")
+
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
+
+logger = logging.getLogger("app.errors")
 
 STATUS_CODES = {
     400: "bad_request",

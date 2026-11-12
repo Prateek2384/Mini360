@@ -66,7 +66,7 @@ def create_invitations(
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise ConflictError("One or more emails were already invited")
+        raise ConflictError("One or more emails were already invited") from None
 
     return InvitationCreateResult(
         invitations=[

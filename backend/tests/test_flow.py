@@ -24,7 +24,7 @@ def scenario(make_client):
         submit_self(leader, aid, SELF_SCORES)
         tokens = invite(leader, aid, ["amit@example.com", "neha@example.com", "priya@example.com"])
         guest = make_client()
-        for token, scores in zip(tokens[:raters], RATER_SCORES[:raters]):
+        for token, scores in zip(tokens[:raters], RATER_SCORES[:raters], strict=True):
             assert submit_guest(guest, token, scores).status_code == 201
         if close:
             close_assessment(aid)
