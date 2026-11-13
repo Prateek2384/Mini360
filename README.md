@@ -236,5 +236,5 @@ The first deploy can time out if the database is still being created; wait until
 - [ER diagram and database rules](docs/er-diagram.md)
 - [Decisions log](docs/decisions.md)
 - [Testing and evidence](docs/testing.md)
-- [Design notes, wireframes and iterations](docs/design.md)
+- [Design notes and wireframes](docs/design.md)
 - [Retrospective](docs/retrospective.md)
