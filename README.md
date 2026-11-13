@@ -13,7 +13,7 @@ A small, privacy-first 360° leadership feedback app. A leader creates an assess
 | App | https://mini360.onrender.com |
 | API docs (Swagger) | https://mini360.onrender.com/api/docs |
 | Health check | https://mini360.onrender.com/api/health |
-| Demo video | <add link> |
+| Demo video | https://drive.google.com/file/d/1ZoaEVY53XPF3jvnbtzqaGtvYqrurdkkW/view?usp=sharing |
 
 The free hosting plan sleeps after inactivity, so the first request can take up to about a minute.
 
