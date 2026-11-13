@@ -7,36 +7,18 @@ Rater: open link → introduction → 10 questions → thank-you page.
 
 ## Wireframes
 
-Low-fidelity sketches in [`wireframes/`](wireframes/):
+Screens captured from the running app, kept in [`wireframes/`](wireframes/). Personal details in the screenshots are placeholders.
 
-- [ ] Login / landing
-- [ ] Dashboard
-- [ ] Invite raters
-- [ ] Survey (self and rater)
-- [ ] Results
+- [x] Login / landing — [`01-login.png`](wireframes/01-login.png)
+- [x] Dashboard — [`02-dashboard.png`](wireframes/02-dashboard.png)
+- [x] Invite raters — [`03-assessment-invite-results.png`](wireframes/03-assessment-invite-results.png)
+- [x] Survey (self and rater) — [`04-self-assessment-survey.png`](wireframes/04-self-assessment-survey.png) (self-assessment only; rater survey not yet captured)
+- [ ] Results — locked state only (bottom of `03-assessment-invite-results.png`); unlocked results screen not yet captured
 
-## Assumptions about user behaviour
+![Login](wireframes/01-login.png)
 
-| # | Assumption | How it was tested | Result |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+![Dashboard](wireframes/02-dashboard.png)
 
-## Usability tests
+![Assessment: invite raters and results](wireframes/03-assessment-invite-results.png)
 
-| Tester | Date | Tasks given | Observations |
-|---|---|---|---|
-| | | | |
-
-## Design iterations
-
-### Iteration 1:
-- **Before:**
-- **Feedback:**
-- **After:**
-
-### Iteration 2:
-- **Before:**
-- **Feedback:**
-- **After:**
+![Self-assessment survey](wireframes/04-self-assessment-survey.png)
